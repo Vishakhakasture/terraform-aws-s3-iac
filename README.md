@@ -143,6 +143,8 @@ yes
 
 This removes the AWS resources managed by the Terraform configuration.
 
+![terraform-destroy](screenshots/terraform-destroy.png)
+
 Result
 
 Successfully created an Amazon S3 bucket using Terraform and verified the resource through the AWS Management Console.
