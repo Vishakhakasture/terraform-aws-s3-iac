@@ -1,4 +1,5 @@
-# this is aws cli
+# AWS provider configuration
+
 terraform {
   required_providers {
     aws = {
@@ -8,12 +9,12 @@ terraform {
   }
 }
 
-# updated region details
+# AWS region configuration
 provider "aws" {
   region = "ap-south-1"
 }
 
-# this is s3 bucket
-resource aws_s3_bucket my_bucket {
+# S3 bucket resource
+resource "aws_s3_bucket" "my_bucket" {
   bucket = "tws-s3-bucket-a81f3c29"
 }
